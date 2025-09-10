@@ -1,0 +1,9 @@
+body {
+    background: pink;
+}
+
+@media(min-width: 35rem) {
+    body {
+        background: yellow;
+    }
+}
