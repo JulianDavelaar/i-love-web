@@ -5,3 +5,26 @@ body {
   padding: 40px;
 }
 
+@font-face {
+  font-family: 'pixel-font';
+  src: url(../PixelFont-Regular.otf);
+}
+
+button{
+
+  appearance: none;
+  font-size: 1em;
+  font-family: inherit;
+
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+    cursor:pointer;
+
+}
+
+  focus-visible{
+    outline: solid .15em white;
+    outline-offset: -.3em;
+  }
+
