@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Waarom heeft elke input een label nodig?</li>
+            <ol>
+                <li>vergroten van klikbaar gebied</li>
+                <li>nodig voor toegankelijkheid, bruikbaarheid en verbeterde gebruikerservaring van formulieren</li>
+                <li>toegankelijkheid voor accessibility</li>
+            </ol>
+
+        <label for="cheese">I like cheese</label>
+        <input type="checkbox" name="cheese" id="cheese">
+        I like peas.
+        <input type="checkbox" name="peas" id="peas">
+         <p><strong>wanneer je dus geen label aanmaakt kunnen mensen met een screenreader <br>
+        niet horen waar de checkbox over gaat</strong></p>
+
+
+        <li>Wat doe je met de attributen type, autocomplete, inputmode en enterkeyhint</li>
+            <ol>
+                <li><Strong>Type:</Strong> bepaalt het soort invoer, tekst, e-mail, nummer.</li>
+                <input type="text"> <input type="email"> <input type="password"> <input type="number"> <input type="date">  
+                <li><strong>Autocomplete:</strong> geeft de browser toestemming om gegevens automatisch in te vullen.</li>
+                <input type="email" autocomplete="email" >
+                <li><strong>Inputmode:</strong> bepaalt het type toetsenbord dat wordt getoond.</li>
+                <input type="number" inputmode="tel"> "toetsenbord voor nummer"
+                <li><strong>Enterkeyhint:</strong> specificeert de tekst op de 'enter'-toets van het virtuele toetsenbord.</li>
+                <input type="email" enterkeyhint="next"> "knop geeft 'next' aan nu"
+            </ol>
+        <li>Wat doen fieldsets en legends in een formulier?</li>
+        <ol>
+            <li>fieldset elementen worden gebruikt om meerdere formulierelementen thematisch te groeperen</li>
+            <li>het plaatst een kader rond de groep wat helpt voor visuele ordening</li>
+            <li>toegankelijkheid, schermlezers kunnen de naam van de groep voorlezen</li>
+        </ol>
+        <fieldset>
+            <legend>namen</legend>
+            <input type="radio">
+            <label for="jan">jan</label><br>
+
+            <input type="radio" name="namen" id="piet">
+            <label for="piet">Piet</label><br>
+
+            <input type="radio">
+            <label for="klaasje">klaasje</label>
+        </fieldset>
+        <li>Wat doen required, maxlength, min, max, step?</li>
+            <ol>
+                <li><Strong>required:</Strong>staat voor een verplicht veld dat ingevuld moet zijn voordat de gebruiker verder kan</li>
+                <li><strong>maxlength:</strong>geeft aan wat de maximaal aantal tekens zijn die je in een formulier in kan voeren</li>
+                <li><strong>min:</strong>stelt de minimum waarde in voor een invoerveld</li>
+                <li><strong>max:</strong>stelt de maximumwaarde in voor een invoerveld</li>
+                <li><strong>step:</strong>geeft de maximale stapgroottte weer die je kan doen</li>
+            </ol>
+            <p><strong>voorbeeld:</strong> Voor een invoerveld voor getallen met min="1" max="10" step="2", zijn de geldige waarden: 1,3,5,7,9.</p>
+
+        <li>Welke input pseudo-classes ken je nog niet? Maak met allemaal een demo'tje</li>
+            <p>ik snap wat pseudo-classes doen en wanneer ik de naam lees is het voor mij vaak duidelijk wat de betekenis is.</p>
+
+    </ul>
+
+</body>
+</html>
