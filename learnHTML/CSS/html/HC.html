@@ -77,6 +77,9 @@
           <p><em>dit</em> <b>zijn</b> <strong>woorden</strong> <i>gewrapt</i> in deze<b>elementen</b></p>
           <h3>p, ul, ol, li en h1-h6 elementen zijn block elementen, ook al schrijf je 1 woord, de browser zal de hele breeddte gebruiken voor dit woord</h3>
           <p>dit</p> <ul>zijn</ul> <ol>woorden</ol> <h1>gewrapt</h1> <li>in</li> deze <ul>elementen</ul>
+          <p>Je kan inline elementen forceren om een block element te worden door ze de 'display: block' waarde mee te geven <br>
+          hiermee overwrite je de user agent waarde die dan op 'display: inline' staat</p>
+          <p>met width kan je de breedte van block elementen bepalen, dit werkt niet bij inline elementen.</p>
 
 
         
@@ -120,12 +123,16 @@
     <li>Veel CSS-eigenschappen (maar niet allemaal) worden overgeërfd. Dit betekent dat de CSS-eigenschap de onderliggende elementen beïnvloedt (zolang we deze niet overschrijven).</li>      
     <li>Wanneer een CSS-eigenschapswaarde tijdens overerving van een ouder naar een kind wordt doorgegeven, noemen we die waarde een 'computed value'.</li>
   
-    <h1>Units</h1>
+    <h1>Fonts en Units</h1>
     <p>een veelgemaakte fout is het vergeten van het opschrijven van de waardes zoals px, hieronder wanneer dit niet nodig is</p>
     <ul>
-      <li></li>
+      <li>De breedte en hoogte van het img element</li>
+      <li>de waarde 0</li>
+      <li>eenheidloze waardes zoals line-height</li>
     </ul>
 
+    <p>met font-size pas je de grootte van de tekst aan die je selecteert, hierdoor kan de h2 groter worden dan de h1</p>
+    <p>met font-weight pas je het 'gewicht' van het font aan, bold bijvoorbeeld</p>
 
 
 
