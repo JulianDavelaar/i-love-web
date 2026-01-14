@@ -15,9 +15,9 @@ button{
   appearance: none;
   font-size: 1em;
   font-family: inherit;
-
+  border-radius: 3px;
   border: none;
-  background-color: black;
+  background-color: blue;
   color: whitesmoke;
     cursor:pointer;
 
