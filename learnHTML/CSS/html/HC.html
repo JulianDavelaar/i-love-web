@@ -135,8 +135,12 @@
     <p>met font-weight pas je het 'gewicht' van het font aan, bold bijvoorbeeld</p>
 
 
-
-
+    <h1>Box model prerequisites</h1>
+      <ul>
+        <li>The background-color property is used to change the color of the background of an element.</li>
+        <li>It's background-color for the background and color for the text.</li>
+        <li>The border-style property defines the type of border shown around an element. Specifying this property will show a border with a default width of 1.5px</li>
+      </ul>
 
 
 
@@ -169,9 +173,12 @@
   
   
       <ul>
-        <li> The ol (ordered list) element represents a list of items that have been intentionally ordered. Changing the order would change the meaning of the list (most likely breaking the original meaning).</li>
-        <li> The ul element represents a list of items where the order of the items does not matter. Changing the order would not change the meaning of the document.</li>
-        <li> The li (list item) element is used inside either an ol or a ul element. It does not have a meaning by itself, so it must be written inside an ol or ul.</li>
+        <li> The ol (ordered list) element represents a list of items that have been intentionally ordered. <br>
+          Changing the order would change the meaning of the list (most likely breaking the original meaning).</li>
+        <li> The ul element represents a list of items where the order of the items does not matter. <br>
+          Changing the order would not change the meaning of the document.</li>
+        <li> The li (list item) element is used inside either an ol or a ul element. It does not have a meaning by itself, <br>
+          so it must be written inside an ol or ul.</li>
         <li> The ol and ul both represent a list of items. When the order matters, you should use an ol. When the order doesn't matter, you should use ul.</li>
         <li> An element is said to be nested inside another one when the opening and closing tags of the first element wrap the other element.</li>
         <li> ol>li + Tab will generate an ol element with a li element nested inside of it.</li>
@@ -180,9 +187,41 @@
         <li> ol>li*3 + Tab will expand into an ol element with three nested li elements.</li>
       </ul>
     
-    <h2>Hoofdstuk 9 recap</h2>
+    <h2>Hoofdstuk 17 recap</h2>
+      <ul>
+        <li>Block elements stretch and take up the entire line.</li>
+        <li>Inline elements take up as much space as their content and do not stretch the entire line. This means they go within other content without "jumping" on a new line.</li>
+        <li>By default, all HTML elements are set to display: inline. Then, the user-agent stylesheet will set specific elements to have a display: block.</li>
+        <li>These elements have a display: block: p, ul, ol, li, h1-h6</li>
+        <li>Block elements will stretch and take up the entire line. It is possible to change this behavior by limiting or specifying the width they take.</li>
+        <li>Setting fixed widths in pixels is something you will sparingly use because the websites we build nowadays are responsive (they work on all screen sizes).</li>
+        <li>The width property has no effect on inline elements.</li>
+        <li>Remember that width allows you to specify the width of Block elements. However, it has no effect on inline elements.</li>
+      </ul>
     
-      
+    <h2>Hoofdstuk 18 recap</h2>
+      <ul>
+        <li>The background-color property is used to change the color of the background of an element.</li>
+        <li>It's background-color for the background and color for the text.</li>
+        <li>An immediate concern that arises when working with changing the default background color is color contrast ratio. You could easily risk making text unreadable with a combination of background-color and color that do not have enough contrast.</li>
+        <li>For now, please stick with a lightgray background color (or black on white/white on black).</li>
+        <li>The border-style property defines the type of border shown around an element. Specifying this property will show a border with a default width of 3px on most browsers (1.5px on Chrome).</li>
+        <li>The border shows up right outside the background color.</li>
+      </ul>
+
+    <h2>Hoofdstuk 19 recap</h2>
+      <ul>
+        <li>Every HTML element has a box around it. The way these boxes work is called the Box model.</li>
+        <li>There are two types of boxes:</li>
+          <ol>
+            <li>Inline box (for inline elements).</li>
+            <li>Block box (for block elements).</li>
+          </ol>
+        <li>Every time we work with the box model, we need to add * { box-sizing: border-box }.</li>
+        <li>A block element has a dedicated line (the content following it will start from a new line).</li>
+        <li>The height of a block element is by default set to auto. It expands with the content of the element.</li>
+      </ul>
+
     
 
 
