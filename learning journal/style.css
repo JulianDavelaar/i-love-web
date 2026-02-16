@@ -1,8 +1,50 @@
 body {
   margin: auto;
-  width: 50%;
-  border: 3px solid green;
+  width: 80%;
+  border: 3px solid #00FF26;
   padding: 40px;
+  background-color: #0c0e0a;
+  color: #00FF26;
+
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.anonymous-pro-regular-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.anonymous-pro-bold-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: #00FF26;
+}
+
+a {
+   text-decoration: none;
 }
 
 @font-face {
@@ -11,7 +53,6 @@ body {
 }
 
 button{
-
   appearance: none;
   font-size: 1em;
   font-family: inherit;
