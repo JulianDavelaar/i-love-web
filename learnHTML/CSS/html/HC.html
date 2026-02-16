@@ -1,252 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="HC.css">
-    <title>LearnHTMLCSS online </title>
-</head>
-<body>
-<h1>
-  hierin ga ik bijhouden
-  wat ik allemaal leer 
-  van de online HTML/CSS course van jad 
-</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="HC.css" />
+    <title>LearnHTMLCSS online</title>
+  </head>
+  <body>
+    <h1>
+      hierin ga ik bijhouden wat ik allemaal leer van de online HTML/CSS course
+      van jad
+    </h1>
 
-  <h2>basic HTML functies</h2>
+    <h2>basic HTML functies</h2>
 
-    <!-- p staat voor paragraph, hiermee kan je dus paragrafen maken, hieronder een voorbeeld -->       
-      <h3>p(paragraph)</h3>
-        <p>
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </p>
+    <!-- p staat voor paragraph, hiermee kan je dus paragrafen maken, hieronder een voorbeeld -->
+    <h3>p(paragraph)</h3>
+    <p>
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s.
+    </p>
 
+    <!-- met 'br' kan je woorden in html forceren een nieuwe regel te beginnen-->
+    <h3>br(break)</h3>
+    <p>
+      when an unknown printer <br />
+      took a galley of type <br />
+      and scrambled it <br />
+      to make a type specimen <br />
+      book.
+    </p>
 
-  <!-- met 'br' kan je woorden in html forceren een nieuwe regel te beginnen-->           
-      <h3>br(break)</h3>
-        <p>
-          when an unknown printer <br>
-          took a galley of type <br>
-          and scrambled it <br>
-          to make a type specimen <br>
-          book.
-        </p>
-
-        <!-- Met 'ul' en 'ol' kan je bulletpoints of nummers maken, met 'li' bepaal je per woord of zin zijn positie in de lijst -->
-        <h3>ul(unordered list) / ol(ordered list)</h3>
-        <ul>
-          <li>pindakaas</li>
-          <li>brood</li>
-          <li>boter</li>
-        </ul>
-        <ol>
-          <li>pak brood</li>
-          <li>smeer boter</li>
-          <li>smeer pindakaas</li>
-        </ol>
-
-        <!-- je kan ook een ordered list in een unordered list zetten of andersom, hieronder een voorbeeldje. -->
-          <h3>unordered list in een ordered list</h3>
-          <ol>
-            <li>bak je ei</li>
-            <li>leg hem op je brood
-              <ul>
-                <li>zout</li>
-                <li>peper</li>
-              </ul>
-            </li>
-            <li>eet hem op</li>
-          </ol>
-
-
-
-         <a href="https://validator.w3.org/nu/#textarea">Met deze link kan je je HTML controleren</a>
-      <h3>strong, b, em en i</h3>
-          <ul>
-            <li>Het em-element (emphasis(nadruk)) vertegenwoordigt een woord of groep woorden die worden benadrukt. <br>
-              Dit heeft vaak invloed op de betekenis van de zin.</li>
-            <li>Het i-element (idiomatic text) vertegenwoordigt een woord of groep woorden die gewoonlijk in een andere stem of stemming worden uitgesproken. <br>
-              Het kan ook worden gebruikt om technische termen, woorden uit andere talen of idiomen aan te duiden.</li>
-            <li>Het is een goede gewoonte om het lang-attribuut toe te voegen wanneer i inhoud in een andere taal vertegenwoordigt</li>
-            <li>Het strong-element wordt gebruikt om inhoud met een grote belangrijkheid weer te geven. Het em-element daarentegen wordt gebruikt om nadruk over te brengen.</li>
-          </ul>
-
-
-
-      <h3>Strong, em, b en i elementen zijn inline elementen, de browser zal ze naast elkaar zetten wanneer je ze gebruikt.</h3>
-          <p><em>dit</em> <b>zijn</b> <strong>woorden</strong> <i>gewrapt</i> in deze<b>elementen</b></p>
-          <h3>p, ul, ol, li en h1-h6 elementen zijn block elementen, ook al schrijf je 1 woord, de browser zal de hele breeddte gebruiken voor dit woord</h3>
-          <p>dit</p> <ul>zijn</ul> <ol>woorden</ol> <h1>gewrapt</h1> <li>in</li> deze <ul>elementen</ul>
-          <p>Je kan inline elementen forceren om een block element te worden door ze de 'display: block' waarde mee te geven <br>
-          hiermee overwrite je de user agent waarde die dan op 'display: inline' staat</p>
-          <p>met width kan je de breedte van block elementen bepalen, dit werkt niet bij inline elementen.</p>
-
-
-        
-      <h3>images</h3>
-      <img src="Lamborghinetta_1959.jpg" width="300" height="200" alt="eerste lamborghini tractor">
-      <h4><li>voeg altijd <i>width</i> en <i>height</i> toe aan je afbeelding, en natuurlijk een alt(ook belangrijk voor SEO!).</li></h4>
-      
-
-      <h1>CSS</h1>
-      <ul>
-        <li>A CSS selector is used to find the elements in a webpage that will receive a set of styles.</li>
-        <li>The CSS syntax is made up of 2 main elements:
-            <ol>
-              <li>A CSS selector (for example, h1)</li>
-              <li>A set of declarations that will be applied for this selector (the code between the curly braces).</li>
-            </ol>
-        </li>
-        <li>A declaration can be broken down into two parts:
-          <ol>
-            <li>CSS property (for example, color).</li>
-            <li>Value (for example, red).</li>
-          </ol>
-        </li>
-        <li>Emmet allows you to use the same shortcut with HTML to turn a line (or multiple lines) into a comment. <br>
-           As a reminder, the shortcut was CMD or Ctrl + / for international keyboards.</li>      
-      </ul>
-
-    <li class=color>met color kan je de kleur van je tekst aanpassen zoals hier blauw is</li>
-    <li class="bold">met font-weight kan je de dikte van je font aanpassen zoals hier bold is.</li>
-    
-    <p>Als je dubbele waardes in je CSS hebt getypt dan zal de browser altijd de laatste laten zien  
-    en daarmee de eerste overschrijven, in je devtools ziet dit er zo uit. 
-    <img src="Schermafbeelding 2025-12-07 111250.png" alt=""></p>
-    
+    <!-- Met 'ul' en 'ol' kan je bulletpoints of nummers maken, met 'li' bepaal je per woord of zin zijn positie in de lijst -->
+    <h3>ul(unordered list) / ol(ordered list)</h3>
     <ul>
-      <li>Een User-agent stylesheet refereert naar de standaard stylesheet van de browser die je gebruikt.</li>
-      <li>Deze stylesheet is de reden waarom h1, strong elementen etc. er zo uitzien. </li>
-      <li>Alle CSS die je zelf schrijft zal de user-agent stylesheet automatisch overschrijven.</li>
+      <li>pindakaas</li>
+      <li>brood</li>
+      <li>boter</li>
+    </ul>
+    <ol>
+      <li>pak brood</li>
+      <li>smeer boter</li>
+      <li>smeer pindakaas</li>
+    </ol>
+
+    <!-- je kan ook een ordered list in een unordered list zetten of andersom, hieronder een voorbeeldje. -->
+    <h3>unordered list in een ordered list</h3>
+    <ol>
+      <li>bak je ei</li>
+      <li>
+        leg hem op je brood
+        <ul>
+          <li>zout</li>
+          <li>peper</li>
+        </ul>
+      </li>
+      <li>eet hem op</li>
+    </ol>
+
+    <a href="https://validator.w3.org/nu/#textarea"
+      >Met deze link kan je je HTML controleren</a
+    >
+    <h3>strong, b, em en i</h3>
+    <ul>
+      <li>
+        Het em-element (emphasis(nadruk)) vertegenwoordigt een woord of groep
+        woorden die worden benadrukt. <br />
+        Dit heeft vaak invloed op de betekenis van de zin.
+      </li>
+      <li>
+        Het i-element (idiomatic text) vertegenwoordigt een woord of groep
+        woorden die gewoonlijk in een andere stem of stemming worden
+        uitgesproken. <br />
+        Het kan ook worden gebruikt om technische termen, woorden uit andere
+        talen of idiomen aan te duiden.
+      </li>
+      <li>
+        Het is een goede gewoonte om het lang-attribuut toe te voegen wanneer i
+        inhoud in een andere taal vertegenwoordigt
+      </li>
+      <li>
+        Het strong-element wordt gebruikt om inhoud met een grote belangrijkheid
+        weer te geven. Het em-element daarentegen wordt gebruikt om nadruk over
+        te brengen.
+      </li>
     </ul>
 
-    <li>Veel CSS-eigenschappen (maar niet allemaal) worden overgeërfd. Dit betekent dat de CSS-eigenschap de onderliggende elementen beïnvloedt (zolang we deze niet overschrijven).</li>      
-    <li>Wanneer een CSS-eigenschapswaarde tijdens overerving van een ouder naar een kind wordt doorgegeven, noemen we die waarde een 'computed value'.</li>
-  
+    <h3>
+      Strong, em, b en i elementen zijn inline elementen, de browser zal ze
+      naast elkaar zetten wanneer je ze gebruikt.
+    </h3>
+    <p>
+      <em>dit</em> <b>zijn</b> <strong>woorden</strong> <i>gewrapt</i> in deze<b
+        >elementen</b
+      >
+    </p>
+    <h3>
+      p, ul, ol, li en h1-h6 elementen zijn block elementen, ook al schrijf je 1
+      woord, de browser zal de hele breeddte gebruiken voor dit woord
+    </h3>
+    <p>dit</p>
+    <ul>
+      zijn
+    </ul>
+    <ol>
+      woorden
+    </ol>
+    <h1>gewrapt</h1>
+    <li>in</li>
+    deze
+    <ul>
+      elementen
+    </ul>
+    <p>
+      Je kan inline elementen forceren om een block element te worden door ze de
+      'display: block' waarde mee te geven <br />
+      hiermee overwrite je de user agent waarde die dan op 'display: inline'
+      staat
+    </p>
+    <p>
+      met width kan je de breedte van block elementen bepalen, dit werkt niet
+      bij inline elementen.
+    </p>
+
+    <h3>images</h3>
+    <img
+      src="Lamborghinetta_1959.jpg"
+      width="300"
+      height="200"
+      alt="eerste lamborghini tractor"
+    />
+    <h4>
+      <li>
+        voeg altijd <i>width</i> en <i>height</i> toe aan je afbeelding, en
+        natuurlijk een alt(ook belangrijk voor SEO!).
+      </li>
+    </h4>
+
+    <h1>CSS</h1>
+    <ul>
+      <li>
+        A CSS selector is used to find the elements in a webpage that will
+        receive a set of styles.
+      </li>
+      <li>
+        The CSS syntax is made up of 2 main elements:
+        <ol>
+          <li>A CSS selector (for example, h1)</li>
+          <li>
+            A set of declarations that will be applied for this selector (the
+            code between the curly braces).
+          </li>
+        </ol>
+      </li>
+      <li>
+        A declaration can be broken down into two parts:
+        <ol>
+          <li>CSS property (for example, color).</li>
+          <li>Value (for example, red).</li>
+        </ol>
+      </li>
+      <li>
+        Emmet allows you to use the same shortcut with HTML to turn a line (or
+        multiple lines) into a comment. <br />
+        As a reminder, the shortcut was CMD or Ctrl + / for international
+        keyboards.
+      </li>
+    </ul>
+
+    <li class="color">
+      met color kan je de kleur van je tekst aanpassen zoals hier blauw is
+    </li>
+    <li class="bold">
+      met font-weight kan je de dikte van je font aanpassen zoals hier bold is.
+    </li>
+
+    <p>
+      Als je dubbele waardes in je CSS hebt getypt dan zal de browser altijd de
+      laatste laten zien en daarmee de eerste overschrijven, in je devtools ziet
+      dit er zo uit. <img src="Schermafbeelding 2025-12-07 111250.png" alt="" />
+    </p>
+
+    <ul>
+      <li>
+        Een User-agent stylesheet refereert naar de standaard stylesheet van de
+        browser die je gebruikt.
+      </li>
+      <li>
+        Deze stylesheet is de reden waarom h1, strong elementen etc. er zo
+        uitzien.
+      </li>
+      <li>
+        Alle CSS die je zelf schrijft zal de user-agent stylesheet automatisch
+        overschrijven.
+      </li>
+    </ul>
+
+    <li>
+      Veel CSS-eigenschappen (maar niet allemaal) worden overgeërfd. Dit
+      betekent dat de CSS-eigenschap de onderliggende elementen beïnvloedt
+      (zolang we deze niet overschrijven).
+    </li>
+    <li>
+      Wanneer een CSS-eigenschapswaarde tijdens overerving van een ouder naar
+      een kind wordt doorgegeven, noemen we die waarde een 'computed value'.
+    </li>
+
     <h1>Fonts en Units</h1>
-    <p>een veelgemaakte fout is het vergeten van het opschrijven van de waardes zoals px, hieronder wanneer dit niet nodig is</p>
+    <p>
+      een veelgemaakte fout is het vergeten van het opschrijven van de waardes
+      zoals px, hieronder wanneer dit niet nodig is
+    </p>
     <ul>
       <li>De breedte en hoogte van het img element</li>
       <li>de waarde 0</li>
       <li>eenheidloze waardes zoals line-height</li>
     </ul>
 
-    <p>met font-size pas je de grootte van de tekst aan die je selecteert, hierdoor kan de h2 groter worden dan de h1</p>
-    <p>met font-weight pas je het 'gewicht' van het font aan, bold bijvoorbeeld</p>
-
+    <p>
+      met font-size pas je de grootte van de tekst aan die je selecteert,
+      hierdoor kan de h2 groter worden dan de h1
+    </p>
+    <p>
+      met font-weight pas je het 'gewicht' van het font aan, bold bijvoorbeeld
+    </p>
 
     <h1>Box model prerequisites</h1>
-      <ul>
-        <li>The background-color property is used to change the color of the background of an element.</li>
-        <li>It's background-color for the background and color for the text.</li>
-        <li>The border-style property defines the type of border shown around an element. Specifying this property will show a border with a default width of 1.5px</li>
-      </ul>
+    <ul>
+      <li>
+        The background-color property is used to change the color of the
+        background of an element.
+      </li>
+      <li>It's background-color for the background and color for the text.</li>
+      <li>
+        The border-style property defines the type of border shown around an
+        element. Specifying this property will show a border with a default
+        width of 1.5px
+      </li>
+    </ul>
 
+    <ul>
+      <li>
+        Every HTML element has a box around it. The way these boxes work is
+        called the Box model.
+      </li>
+      <li>There are two types of boxes:</li>
+      <ol>
+        <li>Inline box (for inline elements).</li>
+        <li>Block box (for block elements).</li>
+      </ol>
 
+      <h3>box-model</h3>
+      <li>
+        Every time we work with the box model, we need to add * { box-sizing:
+        border-box }.
+      </li>
+      <li>
+        A block element has a dedicated line (the content following it will
+        start from a new line).
+      </li>
+      <li>
+        The height of a block element is by default set to auto. It expands with
+        the content of the element.
+      </li>
+      <li>
+        The padding property adds space around an element's content (which could
+        be text or other elements). This space goes inside the borders.
+      </li>
+      <li>
+        An element's padding is an important element of the Box Model. It comes
+        after the width and height but inside the border.
+      </li>
 
+      <h3>Margin/padding</h3>
+      <li>
+        The margin property is used to add space around an element from the
+        outside (outside of the border).
+      </li>
+      <li>
+        padding refers to the space between an element's border and the
+        element's content. In contrast, the margin refers to the space outside
+        an element's border.
+      </li>
+      <li>
+        Margin is usually used to separate an item from another one. In
+        contrast, padding is used to add space inside the current item.
+      </li>
+      <li>
+        The padding adjusts the space inside an element, whereas the margin
+        adjusts the space outside.
+      </li>
+      <li>
+        The Block Box model has a dedicated line for it (the content following
+        it will start from a new line). It is made up of:
+        <ul>
+          <li>width x height</li>
+          <li>Padding</li>
+          <li>border</li>
+          <li>margin</li>
+        </ul>
+      </li>
+    </ul>
 
-
-
-    
     <h2>Hoofdstuk 7 recap</h2>
-    
+
     <p>
-        The p element is used to represent a paragraph of text on a web page. <br>
-        Screen readers announce the p element as a paragraph. This is important. 
-        It allows the user to hear a few words of the paragraph and then skip to another one. <br>
-        Breaking up content into paragraphs helps make a page more accessible. <br> 
-        For now, we recommend that you wrap every piece of text with a p element. 
-        This recommendation will change slightly throughout the course as we learn about more semantic elements. <br>
-        A paragraph does not necessarily need to have more than one sentence. <br>
-        You will notice that a paragraph always starts on a new line. Also, 
-        browsers will automatically add some space that acts as a separation before and after the paragraph. <br>
-        Multiple paragraphs should be wrapped with multiple paragraph elements. <br>
-        The br element should not be used to separate paragraphs or two elements. Instead, 
-        it should only be used to create a new line within the same sentence or context. <br>
-        A paragraph element will mostly contain text. For now, 
-        it's important to know that you cannot nest a paragraph inside another one. <br>
-        While you don't technically need to wrap text with a p element, we recommend that you do. 
-        This helps you write semantic and accessible code. 
-    </p>`
+      The p element is used to represent a paragraph of text on a web page.
+      <br />
+      Screen readers announce the p element as a paragraph. This is important.
+      It allows the user to hear a few words of the paragraph and then skip to
+      another one. <br />
+      Breaking up content into paragraphs helps make a page more accessible.
+      <br />
+      For now, we recommend that you wrap every piece of text with a p element.
+      This recommendation will change slightly throughout the course as we learn
+      about more semantic elements. <br />
+      A paragraph does not necessarily need to have more than one sentence.
+      <br />
+      You will notice that a paragraph always starts on a new line. Also,
+      browsers will automatically add some space that acts as a separation
+      before and after the paragraph. <br />
+      Multiple paragraphs should be wrapped with multiple paragraph elements.
+      <br />
+      The br element should not be used to separate paragraphs or two elements.
+      Instead, it should only be used to create a new line within the same
+      sentence or context. <br />
+      A paragraph element will mostly contain text. For now, it's important to
+      know that you cannot nest a paragraph inside another one. <br />
+      While you don't technically need to wrap text with a p element, we
+      recommend that you do. This helps you write semantic and accessible code.
+    </p>
+    `
 
     <h2>Hoofdstuk 8 recap</h2>
-  
-  
-      <ul>
-        <li> The ol (ordered list) element represents a list of items that have been intentionally ordered. <br>
-          Changing the order would change the meaning of the list (most likely breaking the original meaning).</li>
-        <li> The ul element represents a list of items where the order of the items does not matter. <br>
-          Changing the order would not change the meaning of the document.</li>
-        <li> The li (list item) element is used inside either an ol or a ul element. It does not have a meaning by itself, <br>
-          so it must be written inside an ol or ul.</li>
-        <li> The ol and ul both represent a list of items. When the order matters, you should use an ol. When the order doesn't matter, you should use ul.</li>
-        <li> An element is said to be nested inside another one when the opening and closing tags of the first element wrap the other element.</li>
-        <li> ol>li + Tab will generate an ol element with a li element nested inside of it.</li>
-        <li> The ol and ul elements can be nested several times as well as mixed together.</li>
-        <li> Paragraphs cannot be nested and cannot contain lists. They mostly just wrap text.</li>
-        <li> ol>li*3 + Tab will expand into an ol element with three nested li elements.</li>
-      </ul>
-    
+
+    <ul>
+      <li>
+        The ol (ordered list) element represents a list of items that have been
+        intentionally ordered. <br />
+        Changing the order would change the meaning of the list (most likely
+        breaking the original meaning).
+      </li>
+      <li>
+        The ul element represents a list of items where the order of the items
+        does not matter. <br />
+        Changing the order would not change the meaning of the document.
+      </li>
+      <li>
+        The li (list item) element is used inside either an ol or a ul element.
+        It does not have a meaning by itself, <br />
+        so it must be written inside an ol or ul.
+      </li>
+      <li>
+        The ol and ul both represent a list of items. When the order matters,
+        you should use an ol. When the order doesn't matter, you should use ul.
+      </li>
+      <li>
+        An element is said to be nested inside another one when the opening and
+        closing tags of the first element wrap the other element.
+      </li>
+      <li>
+        ol>li + Tab will generate an ol element with a li element nested inside
+        of it.
+      </li>
+      <li>
+        The ol and ul elements can be nested several times as well as mixed
+        together.
+      </li>
+      <li>
+        Paragraphs cannot be nested and cannot contain lists. They mostly just
+        wrap text.
+      </li>
+      <li>
+        ol>li*3 + Tab will expand into an ol element with three nested li
+        elements.
+      </li>
+    </ul>
+
     <h2>Hoofdstuk 17 recap</h2>
-      <ul>
-        <li>Block elements stretch and take up the entire line.</li>
-        <li>Inline elements take up as much space as their content and do not stretch the entire line. This means they go within other content without "jumping" on a new line.</li>
-        <li>By default, all HTML elements are set to display: inline. Then, the user-agent stylesheet will set specific elements to have a display: block.</li>
-        <li>These elements have a display: block: p, ul, ol, li, h1-h6</li>
-        <li>Block elements will stretch and take up the entire line. It is possible to change this behavior by limiting or specifying the width they take.</li>
-        <li>Setting fixed widths in pixels is something you will sparingly use because the websites we build nowadays are responsive (they work on all screen sizes).</li>
-        <li>The width property has no effect on inline elements.</li>
-        <li>Remember that width allows you to specify the width of Block elements. However, it has no effect on inline elements.</li>
-      </ul>
-    
+    <ul>
+      <li>Block elements stretch and take up the entire line.</li>
+      <li>
+        Inline elements take up as much space as their content and do not
+        stretch the entire line. This means they go within other content without
+        "jumping" on a new line.
+      </li>
+      <li>
+        By default, all HTML elements are set to display: inline. Then, the
+        user-agent stylesheet will set specific elements to have a display:
+        block.
+      </li>
+      <li>These elements have a display: block: p, ul, ol, li, h1-h6</li>
+      <li>
+        Block elements will stretch and take up the entire line. It is possible
+        to change this behavior by limiting or specifying the width they take.
+      </li>
+      <li>
+        Setting fixed widths in pixels is something you will sparingly use
+        because the websites we build nowadays are responsive (they work on all
+        screen sizes).
+      </li>
+      <li>The width property has no effect on inline elements.</li>
+      <li>
+        Remember that width allows you to specify the width of Block elements.
+        However, it has no effect on inline elements.
+      </li>
+    </ul>
+
     <h2>Hoofdstuk 18 recap</h2>
-      <ul>
-        <li>The background-color property is used to change the color of the background of an element.</li>
-        <li>It's background-color for the background and color for the text.</li>
-        <li>An immediate concern that arises when working with changing the default background color is color contrast ratio. You could easily risk making text unreadable with a combination of background-color and color that do not have enough contrast.</li>
-        <li>For now, please stick with a lightgray background color (or black on white/white on black).</li>
-        <li>The border-style property defines the type of border shown around an element. Specifying this property will show a border with a default width of 3px on most browsers (1.5px on Chrome).</li>
-        <li>The border shows up right outside the background color.</li>
-      </ul>
+    <ul>
+      <li>
+        The background-color property is used to change the color of the
+        background of an element.
+      </li>
+      <li>It's background-color for the background and color for the text.</li>
+      <li>
+        An immediate concern that arises when working with changing the default
+        background color is color contrast ratio. You could easily risk making
+        text unreadable with a combination of background-color and color that do
+        not have enough contrast.
+      </li>
+      <li>
+        For now, please stick with a lightgray background color (or black on
+        white/white on black).
+      </li>
+      <li>
+        The border-style property defines the type of border shown around an
+        element. Specifying this property will show a border with a default
+        width of 3px on most browsers (1.5px on Chrome).
+      </li>
+      <li>The border shows up right outside the background color.</li>
+    </ul>
 
     <h2>Hoofdstuk 19 recap</h2>
-      <ul>
-        <li>Every HTML element has a box around it. The way these boxes work is called the Box model.</li>
-        <li>There are two types of boxes:</li>
-          <ol>
-            <li>Inline box (for inline elements).</li>
-            <li>Block box (for block elements).</li>
-          </ol>
-
-        <h3>box-model</h3>
-          <li>Every time we work with the box model, we need to add * { box-sizing: border-box }.</li>
-          <li>A block element has a dedicated line (the content following it will start from a new line).</li>
-          <li>The height of a block element is by default set to auto. It expands with the content of the element.</li>
-          <li>The padding property adds space around an element's content (which could be text or other elements). This space goes inside the borders.</li>
-          <li>An element's padding is an important element of the Box Model. It comes after the width and height but inside the border.</li>
-        
-        <h3>Margin/padding</h3>
-          <li>The margin property is used to add space around an element from the outside (outside of the border).</li>
-          <li>padding refers to the space between an element's border and the element's content. In contrast, the margin refers to the space outside an element's border.</li>
-          <li>Margin is usually used to separate an item from another one. In contrast, padding is used to add space inside the current item.</li>
-          <li>The padding adjusts the space inside an element, whereas the margin adjusts the space outside.</li>
-          <li>The Block Box model has a dedicated line for it (the content following it will start from a new line). It is made up of:
-            <ul>
-              <li>width x height</li>
-              <li>Padding</li>
-              <li>border</li>
-              <li>margin</li>
-            </ul>
-          </li>
-
-      </ul>
-
-
+    <ul>
+      <li>
+        Every HTML element has a box around it. The way these boxes work is
+        called the Box model.
+      </li>
+      <li>There are two types of boxes:</li>
+      <li>
+        Every time we work with the box model, we need to add * { box-sizing:
+        border-box }.
+      </li>
+      <li>
+        A block element has a dedicated line (the content following it will
+        start from a new line).
+      </li>
+      <li>
+        The height of a block element is by default set to auto. It expands with
+        the content of the element.
+      </li>
+      <li>
+        The border is placed immediately outside the background color of the
+        element.
+      </li>
+      <li>
+        The space needed to draw the border is taken from the width and height.
+      </li>
+      <li>
+        The padding property adds space around an element's content (which could
+        be text or other elements). This space goes inside the borders.
+      </li>
+      <li>
+        Don't forget to always have * { box-sizing: border-box } at the top of
+        your CSS file. Otherwise, you will observe different results.
+      </li>
+      <li>
+        An element's padding is an important element of the Box Model. It comes
+        after the width and height but inside the border.
+      </li>
+      <li>
+        The margin property is used to add space around an element from the
+        outside (outside of the border).
+      </li>
+      <li>
+        padding refers to the space between an element's border and the
+        element's content. In contrast, the margin refers to the space outside
+        an element's border.
+      </li>
+      <li>
+        Margin is usually used to separate an item from another one. In
+        comparison, padding is used to add space inside the current item.
+      </li>
+      <li>
+        We say that the padding adjusts the space inside an element, whereas the
+        margin adjusts the space outside.
+      </li>
+      <li>
+        The Box model is made up of the following properties and
+        characteristics:
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </li>
+    </ul>
 
     <h2>Hoofdstuk 1</h2>
-
-    
-
-
-</body>
+  </body>
 </html>
