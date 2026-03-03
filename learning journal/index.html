@@ -1220,10 +1220,27 @@ Ik ben het meest verbeterd op het technische gebied, ik merk meer balans tussen 
 
         <li>
           Ik kan uitleggen wat Liquid doet, wat een view is, wat server-side rendering inhoudt en hoe ik data aan een view meegeef om dynamische HTML te renderen.
-          <a href=""></a>
+          <a href="https://github.com/JulianDavelaar/connect-your-tribe-squad-page/blob/027cafac7083503eaf1cca7b2eeae5afd19c1f19/views/index.liquid#L14-L26">Liquid</a>
           <p>liquid maakt van dynamische JSON data leesbare HTML. De view is wat het leesbaar maakt en server-side rendering maakt de HTML voordat het naar de browser gaat.</p>
         </li>
 
+        <li>
+          Ik weet hoe ik in Liquid partials kan maken en gebruiken, en data mee kan geven aan partials.
+          <a href="https://github.com/JulianDavelaar/connect-your-tribe-squad-page/tree/main/views/partials">Partials squadpage</a>
+          <p>Partials kan ik liquid heel handig zijn, zo kan je bijvoorbeeld je head en footer in een apart partial bestand zetten en verbinden met je index door iets wat lijkt op {% render 'partials/head.liquid', title: 'Squad page' %} in te vullen. Zo heb je bovenaan alleen deze regel en de werkzame partial wordt hiermee aangeroepen.</p>
+        </li>
+
+        <li>
+          Ik weet hoe ik verschillende Liquid filters toe kan passen en waar ik kan vinden hoe ze werken.
+          <a href="https://github.com/JulianDavelaar/connect-your-tribe-profile-card/blob/cdc08096d0d75ff8e73c75edad3740b2dbd7ff62/views/practice.liquid#L5-L6">Liquid filters</a>
+          <p>Je hebt filters zoals date wat ik heb gebruikt in me voorbeeld, je kan hiermee data bewerken of specifieke dingen tonen. de soorten filters kan je gewoon online vinden</p>
+        </li>
+
+        <li>
+          Ik heb een strategie voor het debuggen van dynamische data in Liquid views met het json filter.
+          <a href=""></a>
+          <p>Voor het debuggen kan je {{ data | json }} gebruiken, heb dit nog niet zoveel gebruikt.</p>
+        </li>
       </ol>
     
     </section>
