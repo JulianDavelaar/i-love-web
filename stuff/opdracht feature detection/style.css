@@ -1,0 +1,20 @@
+p::after {
+   content: attr(data-woord);
+}
+
+button::after {
+    content: attr(data-label);
+}
+
+.title {
+    position: sticky;
+    top: 0;
+    container-type: scroll-state;
+    background: white;
+}
+
+@container scroll-state(stuck: top) {
+    .title {
+        background-color: blue;
+    }
+}
