@@ -39,13 +39,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: black;
+  background-color: #0c0e0a;
   color: #00FF26;
+  padding: .7em 0 .7em 0;
 }
 
 a {
    text-decoration: none;
    color:rgb(0, 122, 230);
+   font-weight: 700;
+
+   &:hover {
+    transform: translate(0, -5px);
+    transition-duration: .3s;
+    animation-timing-function: ease-in-out;
+    }
 }
 
 @font-face {
@@ -70,3 +78,42 @@ button{
     outline-offset: -.3em;
   }
 
+
+
+button {
+    background-color: gold;
+    border-radius: 5px;
+    color: white;    
+}
+
+
+
+/* dark mode, of light mode in dit geval */
+
+@media screen and (prefers-color-scheme: light){
+    body { background-color: white;
+            color: black;
+    }
+
+    nav {
+      background-color: white;
+
+  }
+}
+
+
+/* prefers-reduced-motion */
+
+@media(prefers-reduced-motion: reduce){
+  a {
+   text-decoration: none;
+   color:rgb(0, 122, 230);
+   font-weight: 700;
+
+   &:hover {
+    transform: translate(0, 0px);
+    transition-duration: .3s;
+    animation-timing-function: ease-in-out;
+    }
+  }
+}
