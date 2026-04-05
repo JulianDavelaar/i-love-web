@@ -5,3 +5,25 @@
 .bold{
     font-weight: bold;
 }
+
+body {
+    background-color: #303030;
+    color: white;
+    font-family: "inter";
+    padding: 1em 5em 1em 5em;
+}
+
+a {
+    text-decoration: none;
+    color:  #35A7FF;
+}
+
+ul{
+    border: solid #FFD37F;
+    max-width: fit-content;
+    padding: 50px;
+}
+
+h2 {
+    color: #FFD37F;
+}
