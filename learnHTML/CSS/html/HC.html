@@ -336,7 +336,48 @@
         <p>A common question comes up: How do I know how to decide between class and id?
            Ask yourself if there's a possibility to use the same element more than once on the same page. If there's a slight doubt that it will be used in the future, use class. Otherwise, use id.</p>
 
-      
+        <h2>class & id combined</h2>
+          <p>li.ingredient will match li elements that have the ingredient class.</p>
+          <p>li#main-ingredient will match li elements with the id main-ingredient.</p>
+          <p>#main-ingredient.ingredient will match any element with the id main-ingredient and the class ingredient.</p>
+
+          <p>Different selector kinds have different specificity. The word specificity is derived from how specific something is. So, CSS selector specificity determines how specific a particular selector is.</p>
+
+          <p>Here's the basic explanation of CSS selector specificity:</p>
+            <ol>
+              <li>The type selector is the least specific selector.</li>
+              <li>Followed by the class selector. It's more specific than the type selector.</li>
+              <li>Followed by the id selector. The most specific selector.</li>
+            </ol>
+
+          <ol>
+            <li>Here's the order of CSS selector specificity, from least specific to most specific: type < .class < #id</li>
+            <li>The CSS selector specificity algorithm:
+              <ol>
+                <li>Once you use an id in a selector, the first 0 increments. 1, 0, 0.</li>
+                <li>Once you use a class in a selector, the second 0 increments. 0, 1, 0.</li>
+                <li>Once you use a type in a selector, the third 0 increments. 0, 0, 1.</li>
+              </ol>
+            </li>
+            <li>You can spend your entire CSS career without having to calculate the specificity of a selector. However, it's good to know when things (rarely) don't work as expected.\</li>
+          </ol>
+
+        <h2>padding & margin shorthands</h2>
+          <p>Instead of writing padding-top: 10px, you can write (in CSS): pt10 and then hit the Tab key. It will expand into padding-top: 10px. Here are some other examples:</p>
+            <ul>
+              <li>pt25 -> padding-top: 25px;</li>
+              <li>pr12 -> padding-right: 12px</li>
+              <li>p10 -> padding: 10px</li>
+              <li>pb20 -> padding-bottom: 20px</li>
+              <li>pl10 -> padding-left: 10px</li>
+            </ul>
+          <p>The same also works for margins. Replace p with m. For example (but not limited to):</p>
+            <ul>
+              <li>mt5 -> margin-top: 5px</li>
+              <li>m10 -> margin: 10px</li>
+            </ul>
+          
+
     <h2>Hoofdstuk 7 recap</h2>
 
     <p>
@@ -576,6 +617,22 @@
         <li>Multiple classes are separated by a space character in the HTML but are not separated by a space character in the CSS.</li>
         <li>In the case of multiple classes, the order of the classes does not matter. What matters is the order of the declarations in CSS (and specificity; covered later).</li>
       </ul>
+
+      <h2>Hoofdstuk 24 recap</h2>
+        <ul>
+          <li>The most common use case for using id and class together is when you have a set of repeatable elements, and you'd like to distinguish one of them with a certain id. You could also have multiple id attributes (as long as they have different values).</li>
+          <li>You can combine multiple selector kinds at the same time. However, it's best to avoid these more specific selectors as they often tend to be unnecessary (but not always).</li>
+          <li>Combining selectors affects the specificity of a selector.</li>
+          <li>Here's the order of CSS selector specificity, from least specific to most specific: type < .class < #id</li>
+          <li>The CSS selector specificity algorithm:
+            <ol>
+              <li>Once you use an id in a selector, the first 0 increments. 1, 0, 0.</li>
+              <li>Once you use a class in a selector, the second 0 increments. 0, 1, 0.</li>
+              <li>Once you use a type in a selector, the third 0 increments. 0, 0, 1.</li>
+            </ol>
+          </li>
+          <li>You can spend your entire CSS career without having to calculate the specificity of a selector. However, it's good to know when things (rarely) don't work as expected.</li>
+        </ul>
   </body>
 </html>
 
