@@ -376,8 +376,15 @@
               <li>mt5 -> margin-top: 5px</li>
               <li>m10 -> margin: 10px</li>
             </ul>
-          
 
+          <p>If you wish for the paddings or margins to translate to the new direction, you have to use the following CSS properties:</p>
+            <ul>
+              <li>padding-inline-start (equivalent to padding-left in ltr, padding-right in rtl).</li>
+              <li>padding-inline-end (equivalent to padding-right in ltr, padding-left in rtl)</li>
+            </ul>
+          <p>The word inline here refers to the horizontal aspect of the element</p>
+          <p>You can also specify vertical padding. For that, you have to use the padding-block-start and padding-block-end. Block here refers to the vertical aspect of the element.</p>
+          <p>when using the same values you can use padding-block(vertical) and padding-inline(horizontal)</p>
     <h2>Hoofdstuk 7 recap</h2>
 
     <p>
@@ -633,7 +640,29 @@
           </li>
           <li>You can spend your entire CSS career without having to calculate the specificity of a selector. However, it's good to know when things (rarely) don't work as expected.</li>
         </ul>
+
+      <h2>Hoofdstuk 25 recap</h2>
+        <ul>
+          <li>The padding and margin properties are called shorthand properties. They save time as they set multiple properties at the same time.</li>
+          <li>padding: 10px is equivalent to padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px.</li>
+          <li>Use emmet to write properties faster. For example, pt5 + Tab -> padding-top: 5px.</li>
+          <li>Remember this order in CSS: top, right, bottom, left.</li>
+          <li>When four values are provided, the padding will apply to the top, right, bottom, and left.</li>
+          <li>When two values are provided, the first value will apply to the vertical axis (top and bottom). The second value will apply to the horizontal axis (right and left).</li>
+          <li>The CSS direction property can be used to switch from the default ltr (left-to-right) to rtl (right-to-left).</li>
+          <li>If you wish for the paddings or margins to translate to the new direction, you have to use the following CSS properties:</li>
+          <li>padding-inline-start (equivalent to padding-left in ltr, padding-right in rtl).</li>
+          <li>padding-inline-end (equivalent to padding-right in ltr, padding-left in rtl)</li>
+          <li>In this context, inline refers to the horizontal context of the element.</li>
+          <li>Similar properties exist for block, which refers to the vertical context of the element.</li>
+          <li>Since this course focuses on LTR languages, we'll provide the solutions with left and right instead of start and end. However, you can still use whichever way you prefer.</li>
+          <li>The padding-inline: 20px declaration will set the padding-left and padding-right to 20px.</li>
+          <li>The padding-block: 15px declaration will set the padding-top and padding-bottom to 15px.</li>
+          <li>Margins also support the inline and block shorthand properties.</li>
+          <li>Two values syntax: padding-inline: 20px 15px is equivalent to padding-inline-start: 20px and padding-inline-end: 15px. Assuming the default writing mode and direction, this would be equivalent to padding-left: 20px and padding-right: 15px.</li>
+        </ul>
   </body>
+
 </html>
 
 
