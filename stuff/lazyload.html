@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lazy loading voorbeeld</title>
+</head>
+<body>
+        <img loading="eager" src="assets/old.jpeg?1" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?2" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?3" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?4" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?4" al+t="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?5" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?7" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?8" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?9" alt="fto" width="500" height="700">
+        <img loading="lazy" src="assets/old.jpeg?10" alt="fto" width="500" height="700">
+
+        <!-- om dit te laten werken moet je:
+         1. elke url moet anders zijn omdat de browser het bestand 1 keer download en dan hergebruikt. het is dus maar 1 request
+         door query parameters toe te voegen moet de browser elk bestand apart inladen.
+         2. de images hebben ook een vaste width en height nodig, anders vallen de afbeeldingen 'technisch binnen de viewport'
+         de browser denkt dan dat ze allemaal zichtbaar moeten zijn.  -->
+  
+
+
+</body>
+</html>
+
