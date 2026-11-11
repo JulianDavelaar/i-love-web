@@ -9,8 +9,8 @@ Fork en clone deze leertaak en maak 'm van jezelf.
 ## Learning Journal
 
 Houd je leerproces routinematig (chronologisch) bij.
-Noteer aantekeningen, interessante links en bronnen die je niet wil vergeten waar je later nog naar wil kijken. 
-Voeg je sketchnotes en aantekeningen van de We Love Web presentaties en andere lezingen toe. 
+Noteer aantekeningen, interessante links en bronnen die je niet wil vergeten waar je later nog naar wil kijken.
+Voeg je sketchnotes en aantekeningen van de We Love Web presentaties en andere lezingen toe.
 Dit is ook de plek waar je je dagelijkse checkout doet.
 
 ## Digital Garden
@@ -18,7 +18,6 @@ Dit is ook de plek waar je je dagelijkse checkout doet.
 Maak jouw eigen vette website, een creatief weblog, je project portfolio, een link dump, en/of een playground... Hiermee ga je experimenteren en nieuwe technieken uitproberen. Niks moet, alles mag.
 
 NB: Je kunt een eigen domeinnaam koppelen aan jouw etalage. Vraag Justus om tips of hulp als je dit wilt doen.
-
 
 ## Doel van deze opdracht
 

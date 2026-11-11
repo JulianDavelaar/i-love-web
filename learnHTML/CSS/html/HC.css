@@ -1,29 +1,29 @@
-.color{
-    color: blue;
+.color {
+	color: blue;
 }
 
-.bold{
-    font-weight: bold;
+.bold {
+	font-weight: bold;
 }
 
 body {
-    background-color: #303030;
-    color: white;
-    font-family: "inter";
-    padding: 1em 5em 1em 5em;
+	background-color: #303030;
+	color: white;
+	font-family: 'inter';
+	padding: 1em 5em 1em 5em;
 }
 
 a {
-    text-decoration: none;
-    color:  #35A7FF;
+	text-decoration: none;
+	color: #35a7ff;
 }
 
-ul{
-    border: solid #FFD37F;
-    max-width: fit-content;
-    padding: 50px;
+ul {
+	border: solid #ffd37f;
+	max-width: fit-content;
+	padding: 50px;
 }
 
 h2 {
-    color: #FFD37F;
+	color: #ffd37f;
 }

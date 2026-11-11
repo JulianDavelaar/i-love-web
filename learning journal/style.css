@@ -1,119 +1,111 @@
 body {
-  margin: auto;
-  width: 80%;
-  border: 3px solid #00FF26;
-  padding: 40px;
-  background-color: #0c0e0a;
-  color: #00FF26;
+	margin: auto;
+	width: 80%;
+	border: 3px solid #00ff26;
+	padding: 40px;
+	background-color: #0c0e0a;
+	color: #00ff26;
 
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .anonymous-pro-bold {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 700;
+	font-style: normal;
 }
 
 .anonymous-pro-regular-italic {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: italic;
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-style: italic;
 }
 
 .anonymous-pro-bold-italic {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 700;
-  font-style: italic;
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 700;
+	font-style: italic;
 }
 
-
-
 nav {
-  position: sticky;
-  top: 0;
-  background-color: aliceblue;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0c0e0a;
-  color: #00FF26;
-  padding: .7em 0 .7em 0;
+	position: sticky;
+	top: 0;
+	background-color: aliceblue;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #0c0e0a;
+	color: #00ff26;
+	padding: 0.7em 0 0.7em 0;
 }
 
 a {
-   text-decoration: none;
-   color:rgb(0, 122, 230);
-   font-weight: 700;
+	text-decoration: none;
+	color: rgb(0, 122, 230);
+	font-weight: 700;
 
-   &:hover {
-    transform: translate(0, -5px);
-    transition-duration: .3s;
-    animation-timing-function: ease-in-out;
-    }
+	&:hover {
+		transform: translate(0, -5px);
+		transition-duration: 0.3s;
+		animation-timing-function: ease-in-out;
+	}
 }
 
 @font-face {
-  font-family: 'pixel-font';
-  src: url(../PixelFont-Regular.otf);
+	font-family: 'pixel-font';
+	src: url(../PixelFont-Regular.otf);
 }
-
-button{
-  appearance: none;
-  font-size: 1em;
-  font-family: inherit;
-  border-radius: 3px;
-  border: none;
-  background-color: orange;
-  color: black;
-    cursor:pointer;
-
-}
-
-  focus-visible{
-    outline: solid .15em white;
-    outline-offset: -.3em;
-  }
-
-
 
 button {
-    background-color: gold;
-    border-radius: 5px;
-    color: white;    
+	appearance: none;
+	font-size: 1em;
+	font-family: inherit;
+	border-radius: 3px;
+	border: none;
+	background-color: orange;
+	color: black;
+	cursor: pointer;
 }
 
+focus-visible {
+	outline: solid 0.15em white;
+	outline-offset: -0.3em;
+}
 
+button {
+	background-color: gold;
+	border-radius: 5px;
+	color: white;
+}
 
 /* dark mode, of light mode in dit geval */
 
-@media screen and (prefers-color-scheme: light){
-    body { background-color: white;
-            color: black;
-    }
+@media screen and (prefers-color-scheme: light) {
+	body {
+		background-color: white;
+		color: black;
+	}
 
-    nav {
-      background-color: white;
-
-  }
+	nav {
+		background-color: white;
+	}
 }
-
 
 /* prefers-reduced-motion */
 
-@media(prefers-reduced-motion: reduce){
-  a {
-   text-decoration: none;
-   color:rgb(0, 122, 230);
-   font-weight: 700;
+@media (prefers-reduced-motion: reduce) {
+	a {
+		text-decoration: none;
+		color: rgb(0, 122, 230);
+		font-weight: 700;
 
-   &:hover {
-    transform: translate(0, 0px);
-    transition-duration: .3s;
-    animation-timing-function: ease-in-out;
-    }
-  }
+		&:hover {
+			transform: translate(0, 0px);
+			transition-duration: 0.3s;
+			animation-timing-function: ease-in-out;
+		}
+	}
 }

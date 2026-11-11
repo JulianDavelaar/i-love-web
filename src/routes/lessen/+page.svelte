@@ -1,0 +1,929 @@
+<script>
+  const studentRoute = `app.get("/student/:id", async function (request, response) {
+  // Gebruik de request parameter id en haal de juiste persoon uit de WHOIS API op
+  const personDetailResponse = await fetch(
+    "https://fdnd.directus.app/items/person/" + request.params.id,
+  );
+  // En haal daarvan de JSON op
+  const personDetailResponseJSON = await personDetailResponse.json();
+  // Render student.liquid uit de views map en geef de opgehaalde data mee als variable, genaamd person
+  // Geef ook de eerder opgehaalde squad data mee aan de view
+  response.render("student.liquid", {
+    person: personDetailResponseJSON.data,
+    squads: squadResponseJSON.data,
+  });
+});`;
+
+  const jsonUitleg = `: " " {} , [] dit is alles wat je nodig hebt voor JSON
+
+[ (Dit zorgt voor de array)
+  {
+    "key": "value",
+    "eigenaar": "Julian"
+  }
+]`;
+
+  const postRoute = `app.post("/", async function (request, response) {
+  response.redirect(303, "/")
+});`;
+
+  const legeAccolades = '{}';
+
+  const objectVoorbeeld = `const myObject = {
+  name: 'objectje',
+  run: function () {
+    console.log('i am runnnning')
+  }
+}
+
+myObject.name // 'objectje'
+myObject.run()
+
+// function
+function myFunction() {
+
+}
+
+// constructor function
+function Bag(brand) {
+  this.brand = brand
+  this.roll = function () {
+    console.log('move in any direction without carrying')
+  }
+}
+
+const myCoolBag = new Bag('nike')
+console.log(myCoolBag.brand) // 'nike'`;
+
+  const propsVoorbeeld = 'let { data } = $props();';
+
+  const opruimVoorbeeld = 'return () => { ... }';
+
+  const effectVoorbeeld = `let count = $state(0);                        // waarde die kan veranderen, start op 0
+
+$effect(() => {                               // draait in de browser na het mounten
+  document.title = \`Teller: \${count}\`;        // leest count, dus draait opnieuw als count verandert
+});`;
+</script>
+
+<nav>
+    <a href="#sprint-1">Sprint 1</a>
+    <a href="#sprint-2">Sprint 2</a>
+    <a href="#sprint-3">Sprint 3</a>
+    <a href="#sprint-4">Sprint 4</a>
+    <a href="#sprint-5">Sprint 5</a>
+    <a href="#sprint-6">Sprint 6</a>
+    <a href="#sprint-7">Sprint 7</a>
+    <a href="#semester-2">Semester 2</a>
+    <a href="#sprint-8">Sprint 8</a>
+    <a href="#sprint-9">Sprint 9</a>
+    <a href="#jaar-2">Jaar 2</a>
+    <a href="#semester-2">Semester 3</a>      
+    <a href="#sprint-9">Sprint 10</a>
+    <a href="#sprint-9">Sprint 11</a>
+    <a href="#sprint-9">Sprint 12</a>
+</nav>
+
+   <header>
+      <h1>learning journal</h1>
+    </header>
+  
+<section id="sprint-1">
+    <h2>sprint-1 week 1 dag 2</h2>
+
+    <h2>HTML</h2>
+    <ul>
+      <li>gestructureerde manier van het opmaken van pagina's</li>
+      <li>elementen van HTML in elkaar zetten heet 'nesten'</li>
+    </ul>
+
+    <h2>CSS</h2>
+    <ul>
+      <li>vorm, layout, typografie, animatie</li>
+      <li>met selectors zoals p, * en a kan je kleuren selecteren</li>
+      <li>color = property, waarde = rood samen vormt dit een declaratie</li>
+    </ul>
+
+    <h2>JS</h2>
+    <ul>
+      <li>wordt gebruikt voor bewegingen op een website</li>
+      <li>
+        wanneer de gebruiker ergens overheen gaat met zijn muis ontstaan er
+        bewegingen
+      </li>
+    </ul>
+    <h2>3 studievragen</h2>
+    <ol>
+      <li>wat is het nut van een breakdown schets?</li>
+      <li>
+        hoe kan je het beste onthouden welke letters en tekens waarvoor bedoeld
+        zijn?
+      </li>
+      <li>
+        waar ben ik nou eigenlijk mee bezig, als ik iets intik en het is goed
+        denk ik fijn maar ik weet niet wat ik doe
+      </li>
+    </ol>
+
+    <h2>sprint-1 week 1 dag 3</h2>
+    <ul>
+      <li>uitgezocht waaruit de HvA website is opgebouwd</li>
+    </ul>
+
+    <h2>sprint-1 week 1 dag 4</h2>
+    <ul>
+      <li>JS: querySelector, addEventListener,</li>
+    </ul>
+
+    <h2>sprint-1 week 2 dag 3</h2>
+    <h2>Schrijf drie dingen op die je vandaag hebt geleerd</h2>
+    <ol>
+      <li>ik heb zelf grids toegepast in de squad page.</li>
+      <li>
+        Ik heb geleerd hoe ik @media kan gebruiken om pagina's automatisch aan
+        te laten passen aan de grootte van het scherm.
+      </li>
+      <li>
+        Ik weet nu hoe ik goed een breakdown schets kan maken die voor iedereen
+        te begrijpen is.
+      </li>
+    </ol>
+
+    <h2>sprint-1 week 2 dag 5</h2>
+    <h2>welke feedback heb je gegeven aan de squad page van een ander team?</h2>
+    <p>
+      Ik heb tips gegeven over de keuze van tekst en toevoeging van tekst bij
+      paragrafen
+    </p>
+    <h2>
+      welke feedback heb je ontvangen en waar wil je aan het weekend iets aan
+      doen
+    </h2>
+    <p>
+      de site ziet er overzichtelijk uit en is responsive, na het weekend moeten
+      er links naar de profielkaarten komen.
+    </p>
+
+    <h2>Sprint-1 week 3 dag 1</h2>
+    <h3>
+      op welke manieren kan je visuele hiërachrie aanbrengen in je ontwerp? lege
+      ze kort uit
+    </h3>
+    <p>
+      je kan visuele hiëarchie toevoegen aan je ontwerp door de grootte,
+      kleur/contrast witruimte en positie en animatie te gebruiken
+    </p>
+    <h3>Welke niveaus van visuele hiërarchie heb je geleerd?</h3>
+    <p>
+      1: het meest belangrijke waar de gebruiker naar moet kijken, de main info
+    </p>
+    <p>2: belangrijke details die van belang zijn op de hoofdzaak</p>
+    <p>
+      3: Overige algemene informatie die belangrijk kunnen zijn maar de
+      gebruiker niet direct nodig heeft
+    </p>
+    <h3>Wie is Joshua Porter en wat bedoelt hij met; 'visual hierarchy'?</h3>
+    <p>
+      Joshua Porter is de creator van 'what to wear'en een designer, met de
+      quote visual hierarchy bedoeld hij de manier waarop belangrijke informatie
+      door de gebruiker eerder gezien wordt dan bijzaken of achtergrond info met
+      behulp van kleuren, tekstgroottes, contrast etc.
+    </p>
+    <h2>sprint-1 week 3 dag 3</h2>
+    <h3>wat heb ik geleerd vandaag?</h3>
+    <p>
+      vandaag hebben we updates gemaakt aan onze squad page, ik heb geleerd dat
+      het gebruik van media queries echt specifiek onderdelen van je code per
+      stuk aan moet roepen, echter vind ik het erg lastig te bepalen waar dit
+      moet staan en wat ik dan moet invullen.
+    </p>
+</section>
+
+<section id="sprint-2">
+    <h2>sprint - 2</h2>
+    <h2>Sprint-2 week 1 dag 1</h2>
+    <p>
+      vandaag geleerd hoe je met een opdrachtgever moet communiceren en de
+      juiste vragen moet stellen aan de hand van een briefing en debriefing.
+    </p>
+
+    <h2>Sprint-2 week 1 dag 3</h2>
+    <h3>welke 3 dingen heb je geleerd over</h3>
+    <ol>
+      <li>schaduwen tekenen om te laten zien dat je op een knop hovert</li>
+      <li>eerst de tekst op schrijven en dan pas een knop eromheen tekenen</li>
+      <li>
+        duidelijk de hierarchie in typografie zien om duidelijk aan te tonen wat
+        belangrijk is.
+      </li>
+    </ol>
+
+    <h2>Sprint-2 week 1 dag 5</h2>
+    <p>
+      vandaag heb ik van de css van een andere groep kennis opgedaan ik heb
+      geleerd hoe je met HTML echt alleen de basis legt en nog geen gebruik
+      maakt van CSS
+    </p>
+
+    <h2>sprint-2 week 2 dag 1</h2>
+    <p>
+      wat is het verschil tussen flexbox layout en grid layout? wanneer zou je
+      welke gebruiken
+    </p>
+    <p>
+      flexbox is één dimensionaal en werkt dus in maar een richting, rij of
+      kolom. grids zijn twee dimensionaal. flex zou je gebruiken voor het netjes
+      uitlijnen of onder elkaar zetten van items. grids kan je gebruiken voor
+      complexere layouts met vaste structuren
+    </p>
+
+    <h2>sprint-2 week 2 dag 3</h2>
+    <p>drie eigenschappen van leesbare tekst zijn</p>
+    <ol>
+      <li>headings en tussenruimte</li>
+      <li>regels niet langer dan 10-12 woorden</li>
+      <li>tekst is minimaal 16px groot</li>
+    </ol>
+
+    <p>
+      door mobile first te gaan werken moet je altijd met een klein scherm als
+      voorbeeld beginnen en dan vanaf daar naar groter werken en zorgen dat het
+      mooi blijft. je gebruikt bij media queries hierom ook altijd min-width.
+    </p>
+
+    <h2>Sprint-2 week 3 dag 1</h2>
+    <h3>3 code conventies</h3>
+    <ol>
+      <li>tabs</li>
+      <li>spaties</li>
+      <li>ademruimte/witregels</li>
+    </ol>
+    <p>
+      hieronder de link waarin je kan zien dat ik deze 3 dingen heb toegepast op
+      me code
+      https://github.com/JulianDavelaar/the-client-website/blob/d2df4742c273b59e3ea20c4b11283f3fb8f7aa58/index.html#L9C1-L38C14
+    </p>
+    <p>
+      je kan de leesbaarheid van de code verbeteren door duidelijke namen te
+      gebruiken en goede sections weer te geven. en met refactoren pas je de
+      code conventies toe op je eigen code.
+    </p>
+
+    <h2>sprint-2 week 3 dag 3</h2>
+    <h3>
+      Wat vond je van de feedback die je hebt ontvangen van de mentor? Welke
+      feedback ga je verwerken voor de sprint review?
+    </h3>
+
+    <p>
+      afbeeldingen van de opdrachtgever invoegen en afrondingen maken voor de
+      buttons.
+    </p>
+    <h3>
+      wat is jouw belangrijkste vraag voor de opdrachtgever die je wil stellen
+      tijdens de sprint review?
+    </h3>
+    <p>
+      kan je zonder inloggen de foto's van andere gebruikers zien of blijft dat
+      prive?
+    </p>
+
+</section>
+<section id="sprint-3">
+    <h2>Sprint - 3 week 1 dag 1</h2>
+    <h3>Voor wie is toegankelijkheid belangrijk?</h3>
+    <p>
+      voor mensen met beperkingen, niet alleen altijd maar ook tijdelijk of
+      situationeel
+    </p>
+    <p>
+      Voor woensdag ga ik de webpagina die ik heb gekozen nog handmatig
+      controleren en dit in me wiki schrijven
+    </p>
+    <h3>Beschrijf drie voorbeelden voor moeilijke WCAG richtlijnen</h3>
+    <ol>
+      <li>remove horizontal scroll</li>
+      <li>use fieldset and legend elements where appropiate</li>
+      <li>Associate input error messaging with the input it corresponds to</li>
+    </ol>
+
+    <h2>Sprint - 3 week 3 dag 1</h2>
+    <p>
+      een voorbeeld van een kleurcombinatie met een goed contrast is
+      bijvoorbeeld wit op een rode achtergrond. een kleurcombinatie die minder
+      goed werkt is oranje op rood omdat dit 2 warme kleuren zijn. ik denk dat
+      ik me aan WCAG level AA ga houden, zodat ik wel de meeste mensen kan
+      helpen die problemen hebben bij het bedienen van websites. en ik denk dat
+      het afhangt van de soort website die ik bouw in hoeverre ik me bezig hou
+      met de accessibility.
+    </p>
+
+    <h2>Sprint - 3 week 3 dag 3</h2>
+    <p>
+      wat ik anders ga aanpakken komende sprint review is alvast mijn vragen
+      opschrijven en meer werk leveren zodat ik meer kan reviewen
+    </p>
+
+    <p>
+      2 verbeteringen in de readme die ik heb gemaakt, zijn het duidelijker
+      opschrijven van hoe de website werkt, en logischere zinsopbouw.
+    </p>
+
+    <p>
+      ik wil feedback van de opdrachtgever op hoe we nu aan het werk zijn als
+      groep. Of het oke is als me eigen draai die ik eraan ga geven het
+      volledige design veranderd & welke gegevens bij het profiel van de
+      gebruiker moet staan en of de profielen ook vindbaar zijn voor andere
+      gebruikers.
+    </p>
+</section>
+<section id="sprint-4">
+
+    <h2>Sprint - 4 week 1 dag 1</h2>
+    <p>
+      Ik heb geleerd dat de huisstijl erg belangrijk is voor een website en je
+      hiermee goed je merk herkenbaar kan maken. ik heb geleerd dat keuzes met
+      je groepje maken over de kleuren etc ook best lang kan duren ook heb ik
+      geleerd dat een website veel meer kleuren heeft dan in eerste instantie
+      lijkt.
+    </p>
+
+    <p>
+      FDND - Typografie - Oefening 2 - uitwerking
+      https://codepen.io/JulianDavelaar/pen/ByKNPgr?editors=0100
+    </p>
+
+    <h2>Sprint - 4 week 1 dag 3</h2>
+    <p>
+      vandaag heb ik geleerd dat het maken van custom properties veel
+      makkelijker is en dat je hiermee alle kleuren op je site kan aanpassen
+      door er maar eentje aan te passen. Ook heb ik geleerd dat kleuren elkaar
+      kunnen overschrijven wanneer je de juiste volgorde gebruikt. En dat je een
+      stylesheet die je samen maakt kan inladen in je eigen code en voor jezelf
+      kan gebruiken.
+    </p>
+
+    <p>
+      interresante voorbeelden uit de slides:
+      https://css-tricks.com/specifics-on-css-specificity/ bij de checkout van
+      week 1 dag 1 staan nog links naar codepen van FDND - Typografie - Oefening
+      2 - uitwerking
+    </p>
+
+    <h2>Sprint - 4 week 1 dag 5</h2>
+    <p>
+      Feedback die wij hebben gegeven aan andere teams ging voornamelijk over de
+      lees en overzichtelijkheid van de pagina, we hebben ze ook tips gegeven.
+      Wat de andere teams goed deden was de pagina opmaken met lettertype en
+      achtergrond, dit kunnen wij ook nog wel toevoegen. Ik ga aan de issues in
+      het weekend werken en begin volgende week, het liefst heb ik ze voor einde
+      van het weekend af.
+    </p>
+
+    <h2>Sprint - 4 week 2 dag 1</h2>
+
+    <p class="pixel-font">Dit is mijn tekst met een ander font.</p>
+
+    <h2>Sprint - 4 week 2 dag 2</h2>
+
+    <button type="button">een button</button>
+
+    <h2>Sprint - 4 week 2 dag 5</h2>
+    <h2>maak je genoeg gebruik van de gezamenlijke stylesheet?</h2>
+    <p>
+      ja, in mijn design heb ik alle kleuren die ik gebruik aangesloten op de
+      styleguide.
+    </p>
+    <h2>benoem 2 voorbeelden hoe je gebruik maakt van de cascade</h2>
+
+    <h2>sprint - 4 week 3 dag 1</h2>
+    <h2>bronnen uit de workshop</h2>
+    <ul>
+      <li>
+        <a href="https://lawsofux.com/law-of-similarity/">link</a>
+        <p>gaat over de afkomst en het ontstaan van similarity</p>
+      </li>
+      <li>
+        <a href="https://www.nngroup.com/articles/gestalt-similarity/">link</a>
+        <p>
+          gaat over hoe belangrijk kleuren en vormen zijn en dat kleuren
+          uiteindelijk toch een hoger contrast hebben dan vormen
+        </p>
+      </li>
+      <li>
+        <a
+          href="https://www.chrbutler.com/gestalt-principles-of-design-similarity/"
+          >link</a
+        >
+        <p>
+          gaat over de werking van van de similarity principes en wat je wel en
+          niet kan gebruiken
+        </p>
+      </li>
+    </ul>
+    <h2>2 dingen die je nog wilt leren</h2>
+    <ol>
+      <li>
+        hoe je dit specifiek kan toepassen op websites waar dit erg lastig is
+      </li>
+      <li>
+        welke vormen je het beste kan gebruiken om je website mooi te houden
+      </li>
+    </ol>
+</section>
+
+<section id="sprint-5">
+
+    <h2>sprint 5 week 1 dag 1</h2>
+    <ol>
+      <li>Ik wil javascript leren en begrijpen zodat ik er beter in wordt</li>
+      <li>Hoe ga ik JS toepassen op de snappthis pagina</li>
+      <li>
+        zoveel mogelijk tijd in de JS fundamentals stoppen en er veel mee bezig
+        zijn
+      </li>
+      <li>
+        Ik ken nog geen javascript begrippen, ik ga aan de JS fundamentals
+        werken EN learnprogramming.online van Jad
+      </li>
+    </ol>
+
+    <h2>sprint 5 week 1 dag 3</h2>
+    <p>
+      wat moet ik nog doen om van comments naar code te gaan met JS <br />
+      ik moet het stappen plan afmaken en per JS onderdeel de code gaan
+      invoeren, hiervoor moet ik nog een nieuwe page voor snappthis maken
+    </p>
+
+    <p>
+      ik heb van learnprogrammmingonline al een hoop lessen gedaan en ben nu bij
+      les 13 <br />
+      ik ga aan de learnjavascript.online werken vanaf vandaag
+    </p>
+
+    <h2>Sprint 5 week 2 dag 3</h2>
+    <ul>
+      <li>
+        wat ik nog niet wist over html is dat je op een best simpele manier een
+        form required kan maken. <br />
+        volg deze knop om te kijken naar een demo'tje
+        <a href="validatie.html">knop</a>
+      </li>
+      <li>
+        voor vrijdag wil ik de interactie toevoegen bij de form waar je de datum
+        moet kiezen dat de datum invullen verplicht is.
+      </li>
+      <li>
+        brave is en blijft mijn favoriete browser, dit omdat deze gewoon op
+        google basis is en ad en trackingblokkers heeft.
+      </li>
+      <li>
+        elke browser heeft zijn eigen interface, ik denk dat het heel fijn is
+        dat je je eigen keuze kan maken in waar je voorkeur ligt en dat elke
+        browser tot dezelfde functies bestaat.
+      </li>
+    </ul>
+
+    <h2>Sprint 5 week 2 dag 5</h2>
+
+    <h3>
+      Hoe ging het testen met een testpersoon? is het gelukt om diegene hardop
+      te laten voorlezen, <br />
+      de persoon niet te beinvloeden en geen vragen tussendoor te beantwoorden/
+    </h3>
+    <p>
+      ging heel goed, gebruiker wist waar hij naartoe moest navigeren en hoefde
+      hem daar niet bij te helpen.
+    </p>
+    <h3>wat ging goed, en wat kan er beter/</h3>
+    <p>
+      de test ging goed, er was alleen wat te weinig om te laten zien dus voor
+      volgende keer ook even zorgen dat de layout modes werken
+    </p>
+    <h3>
+      hoe ging de tweede user test? zijn daar nog verbeterpunten uitgekomen die
+      je volgende week gaat oppakken?
+    </h3>
+    <p>ja, check de issues van fix the flow</p>
+
+    <h2>sprint-5 week 3 dag 1</h2>
+    <h3>3 studievragen over navigeren en tabel</h3>
+    <ul>
+      <li>
+        wat is de beste manier om je pagina overzichtelijk te houden aan de hand
+        van navigatie
+      </li>
+      <li>wanneer gebruik je tabellen en wanneer juist niet</li>
+      <li>hoe kan je feedforward/feedback met combineren met nivigatie.</li>
+    </ul>
+
+    <h2><strong>2026</strong></h2>
+    <h3>goede voornemens dit jaar</h3>
+    <ul>
+      <li>meer tijd in school stoppen</li>
+      <li>meer discipline in alles wat ik doe</li>
+    </ul>
+
+    <h3>hoe kunnen we elkaar gaan helpen en beter worden</h3>
+    <ul>
+      <li>vragen stellen aan elkaar</li>
+      <li>meer samenwerken en elkaar helpen wanneer je vastloopt</li>
+    </ul>
+
+</section>
+<section id="sprint-6">
+
+    <h2>Sprint-6 week 1 dag 5</h2>
+    <p>
+      Projectboard is bijgewerkt, blijf dit doen. <br />
+      tijdens het reviewen gezien dat anderen grotere stylesheets hebben met
+      name bij de fonts <br />
+      dit moet ik zelf ook nog even doen. <br />
+      de CSS tip uit de video die ik ga toepassen is de vw, dit is een handige
+      en makkelijke manier om mijn site meer responsive te maken
+    </p>
+
+    <h2>sprint-6 week 2 dag 3</h2>
+    <ol>
+      <li>
+        Beschrijf 3 nieuwe CSS properties die je nog niet kende. schrijf een
+        paar zinnen over deze properties naar voorbeelden
+      </li>
+      <li>inset, om daarmee alle kanten van een item ruimte te kunnen geven</li>
+      <li>
+        transition cubic, hiermee kan je ingewikkelde richtingen waardes geven
+        en de css vertellen hoe hij moet bewegen
+      </li>
+      <li>slow in/out, hetzelfde als ease in/out maar dan langzamer</li>
+    </ol>
+
+    <h3>
+      beschrijf 2 Disney animatie principes die je nog niet helemaal begrijpt.
+      Welke vragen heb je daarover?
+    </h3>
+    <ol>
+      <li>
+        Staging, wat bepaald of een stage op de juiste plek staat of niet?
+      </li>
+      <li>
+        Exaggeration and appeal, wanneer zou je dit gebruiken? hoe belangrijk
+        moet iets zijn voor dit.
+      </li>
+    </ol>
+
+    <h3>
+      Beschrijf 1 animatie principe dat je toe gaat voegen aan je persoonlijke
+      website tijdens de assessment week
+    </h3>
+    <p>
+      Ik ga de squash & stretch toevoegen want dit lijkt mij het beste voor de
+      knoppen en voor de weinige opties die ik heb om animaties toe te voegen
+    </p>
+
+ </section>
+
+ 
+<section id="semester-2">
+    <h1>Semester 2</h1>
+</section>
+
+<section id="sprint-7">
+  <h2>Sprint 7 week 1 maandag</h2>
+    <ul>
+      <li>
+        hoe link je bestanden vanuit je public map? <br />
+        Door met een / te beginnen en dan de path in te voeren die gaat naar wat
+        je wilt. <br />
+        Zonder iets voor de / wordt er automatisch in public gezocht
+      </li>
+
+      <li>
+        Wanneer moet je je server herstarten? <br />
+        Als je er langer dan een kwartier niet op bent geweest
+      </li>
+
+      <li>
+        Wat moet je doen om je server te herstarten? <br />
+        Render en je site tabblad opnieuw laden
+      </li>
+
+      <li>
+        Heb je syntax highlighting voor liquid code aan staan? <br />
+        Nu wel
+      </li>
+
+      <li>
+        Hoe open je de terminal met je keyboard? <br />
+        ctrl + `
+      </li>
+
+      <li>
+        Wat staat er in de node_modules map? <br />
+        Codes gebouwt door honderden developers die wij gratis mogen gebruiken
+      </li>
+
+      <li>
+        Welke liquid filters heb je al gebruikt? <br />
+        geen
+      </li>
+    </ul>
+
+    <h2>belangrijke bronnen</h2>
+    <ul>
+      <li>
+        <a
+          href="https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+          >Introduction to Node</a
+        >
+      </li>
+      <li>
+        <a href="https://liquidjs.com/tutorials/intro-to-liquid.html"
+          >The Liquid Template Language</a
+        >
+      </li>
+    </ul>
+
+    <h2>Sprint 7 week 1 Woensdag</h2>
+
+    <ul>
+      <li>
+        Hoe zou je Liquid beschrijven? <br />
+        Ik zou liquid beschrijven als een tool net zoals HTML, CSS en JS. alleen
+        met liquid kan je code in shopify maken en aanpassen.
+      </li>
+
+      <li>
+        Wat kun je met liquid filters doen? <br />
+        Met liquid filters kan je filters gooien over je teksten zoals uppercase
+        en data juist weergeven
+      </li>
+
+      <li>
+        Kun je Liquid code in de browser zien als je de HTML broncode bekijkt?
+        <br />
+        Nee
+      </li>
+
+      <li>
+        Waar wordt Liquid code uitgevoerd? <br />
+        Liquid code wordt server-side uitgevoerd niet in de browser
+      </li>
+
+      <li>
+        Waar wordt HTML uitgevoerd? <br />
+        HTML wordt wel in de browser uitgevoerd
+      </li>
+
+      <li>
+        Wat is een route? <br />
+        Een route is een pad naar een ander pagina, te zien aan wat er na de /
+        staat in de zoekbalk
+      </li>
+
+      <li>
+        Wat hebben routes met bestandsnamen te maken? <br />
+        De bestandsnaam is de locatie waar de route naartoe gaat, dit staat
+        achter de / in de zoekbalk
+      </li>
+
+      <li>
+        Kun je in je browser zien welke bestandsnamen je voor views hebt
+        gebruikt? Kon dat vorig semester wel? <br />
+        nee
+      </li>
+
+      <li>
+        Wat doet JSON.parse()? <br />
+        JSON.parse zet een string om in bruikbare JSON data.
+      </li>
+    </ul>
+
+    <h2>Sprint 7 week 1 vrijdag</h2>
+    <h3>code en design review</h3>
+    <p>
+      van server side code heb ik geleerd dat je data uit een database kan halen
+      <br />
+      en kan gebruiken in je code. ook kan je strings omzetten in bruikbare code
+      met JSON.parse
+    </p>
+    <pre>
+      h1 &#123; 
+      .bio, 
+      .profile-picture, 
+      .tech-logo &#123; transition: transform 0.5s ease;
+      &#125;
+      Dit vind ik een handig stukje code, bij het inladen van de pagina krijg je
+      een kleine animatie.
+      &#125;
+    </pre>
+
+    <h2>Sprint 7 week 2 maandag</h2>
+    <h3>directus en HTTP</h3>
+      <img src="assets/HTTPtekening.jpeg" alt="tekening op whiteboard van HTTP route" height="220" width="260">
+      <p>
+        De browser stuurt een HTTP(Hypertext Transfer Protocol) naar de server(render) waarin hij vraagt om data. <br>
+        Render stuurt weer een HTTP request naar de database directus, directus stuurt deze data in json formaat terug. <br>
+        Render zet de json dan weer om in leesbare HTML en stuurt dit weer door naar de browser. <br>
+        Hieronder een wat leesbaardere foto.
+      </p>
+      <img src="assets/HTTPtekening2.jpeg" alt="tekening op whiteboard van HTTP route" height="220" width="260">
+      <p>de uitleg van julia evans is uitgebreider maar komt op hetzelfde neer</p>
+      <a href="https://wizardzines.com/comics/whats-http/">Uitleg HTTP Julia Evans</a>
+
+      <h3>Voorbeeld van een GET en POST request uit server.js</h3>
+      <pre><code>{studentRoute}</code></pre>
+    <p>Een GET request is eigenlijk wat de naam al zegt, je zegt eigenlijk tegen de server, 
+        "hé server, geef me die pagina". De server stuurt terug wat jij wilt en er veranderd verder niks.
+    </p>
+    <pre><code>{postRoute}</code></pre>
+
+    <p>Je stuurt informatie naar de server om iets te veranderen of op te slaan zoals een 
+    formulier invullen, een bericht posten of data toevoegen.
+    </p>
+
+</section>
+
+
+<section id="sprint-8">
+    <h2>Sprint 8 week 1 woendag</h2>
+    <h3>Leg de termen voor de JavaScript Object Notation in eigen woorden uit</h3>
+    <ul>
+        <li>Een object is een item en heeft eigenschappen zoals een eend, geel, kwakt, drijft.</li>
+        <li>Een array is een lijst die open en sluit je met de blokhaken [] </li>
+        <li>Een key is het eerste stukje in een Object (zie voorbeeld)</li>
+        <li>Een value is het stukje wat na de key komt en tussen "" staat</li>
+        <li>Een string is een woord dat tussen "" staat</li>
+        <li>Een number is gewoon een nummer en staat niet tussen haakjes of iets anders.</li>
+        <li>Een boolean is altijd true of false</li>
+        <li>Null is een "" waar niks is ingevuld niet te verwarren met undefined wat letterlijk niks is</li>
+    </ul>
+    <pre><code>{jsonUitleg}</code></pre>
+</section>
+
+<section id="sprint-9">
+    <h2>Sprint 9 week 1 maandag</h2>
+    <h3>Hoe lang heb ik gedaan over lo-fi idee schets van POST interactie</h3>
+        <p>de lo-fi schets maken duurde ongeveer een uurtje</p>
+    <h3>Hoe lang heb ik gedaan over wireflow met breakdown van de interactie</h3>
+        <p>de wireflow en breakdown is nog niet af maar duurde ook niet meer dan een uurtje</p>
+    <h3>Hoe lang heb ik gedaan over het bouwen van de functionaliteit in HTML met server-side rendering van de interactie</h3>
+        <p>hier moet ik nog mee beginnen</p>
+
+    <h2>Sprint 9 week 2 maandag</h2>
+    <h3>welke enhancement strategiën zijn er en welke heb je al toegepast?</h3>
+        <p>Switch control, carrousel, uitklappen van koppen. die laatste ben ik nu mee bezig</p>
+    <h3>welke UI component ga je woensdag bespreken?</h3>
+        <p>FAQ woensdag en switch volgende week</p>
+    <h3>3 onderdelen uit me project waarover ik twijfel met canuse.</h3>
+        <p>ik twijfel niet, alle css moet werken</p>
+
+
+    <h2>Sprint 9 week 3 maandag</h2>
+    <h3>welke user preference media features ga jij nog toepassen in jouw project?</h3>
+        <p><a href="https://github.com/JulianDavelaar/the-web-is-for-everyone-interactive-functionality9/issues/14">issue met MoSCoW</a></p>
+    <h3>welke UI component van de deeltaak woensdag bespreken?</h3>
+        <p>de eerstvolgende na de FAQ component.</p>
+</section>
+
+  <h2>Practicum over server & client side JS</h2>
+    <p>
+      Een constructor functie is een speciale functie die objecten maakt, hij geeft dus een object terug. objecten zijn alles tussen {legeAccolades}.
+    </p>
+
+    <pre><code>{objectVoorbeeld}</code></pre>
+
+
+
+
+<section id="jaar-2">
+  <h1>Jaar 2</h1>
+</section>
+<section id="sprint-14">
+  <dl>
+    <dt>Hoe bereid je een degelijke feedbacksessie voor?</dt>
+    <dt>Hoe geef je jouw feedback?</dt>
+    <dt>Hoe verwerk je ontvangen feedback?</dt>
+  </dl>
+
+  <dl>
+    <dt>Wat zijn sveltekit layouts en hoe kan je die toepassen in een web project?</dt>
+      <dd>In layouts kan je 1x iets zetten wat je voor je hele site kan gebruiken dit voorkomt dat je jezelf herhaald</dd>
+    <dt>Wat zijn componenten en hoe kan je die toepassen in een web project?</dt>
+      <dd>componenten zijn onderdelen zoals een header of footer die je vaker gebruikt en 1x bouwt en inzet wanneer je dat wilt door hem simpelweg aan te roepen</dd>
+    <dt>Hoe werkt de Directus SKD anders dan een fetch?</dt>
+      <dd>een fetch is een specifiek hulpmiddel om data te verzenden, terwijl een SDK een complete gereedschapskist is die dat hulpmiddel (en vele andere) inpakt voor gebruiksgemak</dd>
+  </dl>
+
+  <dl>
+    <dt>Wat zijn de onderdelen van de Scrum methodiek?</dt>
+    <dd>
+      <ol>
+        <li>Nadenken over wat haalbaar is</li>
+        <li>Formuleer een helder doel</li>
+        <li>Wat er nodig is om dit te bereiken</li>
+        <li>Gekozen doelen opdelen in kleinere taken</li>
+        <li>Bevestigen of dit haalbaar</li>
+      </ol>
+    </dd>
+
+    <dt>Hoe helpt Scrum jou in projectmanagement?</dt>
+    <dd>het helpt zodat je een beter zicht heb op het project</dd>
+
+    <dt>Wat is een sprint 0?</dt>
+    <dd>niet-officiële voorbereidingsfase om de basis te leggen voor een nieuw project voordat de reguliere sprints beginnen</dd>
+
+    <dt>wat is een stand-up?</dt>
+    <dd>een korte dagelijkse bijeenkomst van ca. 15
+    . wat gister gedaan
+    . wat vandaag doen 
+    . hulp nodig?</dd>
+
+
+    <dt>wat zijn de rollen in een team:</dt>
+    <dd>    . product owner
+    . scrum master
+    . developers</dd>
+  </dl>
+
+  <h2>Workshop core SvelteKit principles woensdag 30-09</h2>
+
+  <h3>Reactivity</h3>
+  <ul>
+    <li>Reactivity gebeurt client side en is een extra laag.</li>
+    <li>Eerst zorg je dat alles goed werkt op de server. Daarna verbeter je het met Progressive Enhancement (PE).</li>
+    <li>Met client side komt de reactivity erbovenop.</li>
+  </ul>
+
+  <h3>Eventlisteners vs. reactivity</h3>
+  <ul>
+    <li><strong>Eventlisteners</strong> (die kennen we al): je legt stap voor stap vast wat de browser moet doen.</li>
+    <li><strong>Reactivity</strong> doet hetzelfde, maar hier bepaalt de <strong>data</strong> wat er gebeurt.</li>
+    <li>Onder water gebruikt Svelte dus ook eventlisteners.</li>
+  </ul>
+
+  <h3>Runes</h3>
+  <p>Runes zijn speciale symbolen. Ze beginnen met een <code>$</code>.</p>
+
+  <h4><code>$props()</code></h4>
+  <ul>
+    <li>De server stuurt data, en het page component krijgt die data binnen.</li>
+    <li>Brengt de server nieuwe data naar het page component, dan veranderen alle variabelen automatisch mee.</li>
+    <li>Props kun je ook van een parent component naar een child component doorgeven.</li>
+    <li>Verandert de data in het parent component, dan verandert die in het child component ook.</li>
+  </ul>
+  <p><strong>Aanvulling:</strong> de server "exporteert" de data via een <code>load</code>-functie, bijvoorbeeld in <code>+page.server.js</code>. Wat die functie teruggeeft, komt in <code>+page.svelte</code> binnen als <code>data</code>:</p>
+  <pre><code>{propsVoorbeeld}</code></pre>
+      <p>Bron: <a href="https://svelte.dev/docs/svelte/$props">$props</a> en <a href="https://svelte.dev/docs/kit/load">load</a></p>
+
+  <h4><code>$state()</code></h4>
+  <ul>
+    <li>Gebruik je voor data die kan veranderen.</li>
+    <li>Voorbeeld: <code>let count = $state(0);</code>. Het getal tussen de haakjes is de startwaarde (hier <code>0</code>), en <code>count</code> gebruik je in de template.</li>
+  </ul>
+  <p>Bron: <a href="https://svelte.dev/docs/svelte/$state">$state</a></p>
+
+  <h4><code>$derived()</code></h4>
+  <ul>
+    <li>Gebruik je voor een waarde die je afleidt uit de originele data, bijvoorbeeld de waarde x 2.</li>
+    <li>Dit hebben we al gebruikt in de progress bar.</li>
+  </ul>
+  <p><strong>Aanvulling:</strong> <code>let double = $derived(count * 2);</code>. Verandert <code>count</code>, dan rekent Svelte <code>double</code> automatisch opnieuw uit.</p>
+  <p>Bron: <a href="https://svelte.dev/docs/svelte/$derived">$derived</a></p>
+
+  <h4><code>$effect()</code></h4>
+  <ul>
+    <li>Dit is de laatste rune.</li>
+    <li>Hij is voor zogenaamde <strong>side effects</strong>: acties die niet in de template thuishoren.</li>
+    <li>De effect rune werkt alleen client side.</li>
+  </ul>
+  <p><strong>Aanvulling:</strong> zo werkt <code>$effect</code></p>
+  <ul>
+    <li><strong>Wanneer draait hij?</strong> Eerst nadat het component in de DOM staat (gemount is). Daarna elke keer als een <code>$state</code>- of <code>$derived</code>-waarde verandert die je binnen het effect leest.</li>
+    <li><strong>Hoe weet hij waar hij op moet letten?</strong> Dat hoef je niet op te geven. Svelte kijkt zelf welke reactieve waarden je in het effect gebruikt. Dat heten de <em>dependencies</em>.</li>
+    <li><strong>Waarom alleen client side?</strong> Op de server wordt alleen HTML gemaakt. Er is daar geen browser en geen DOM, dus effects slaan de server over.</li>
+    <li><strong>Opruimen:</strong> geef je in het effect een functie terug (<code>{opruimVoorbeeld}</code>), dan draait die net voordat het effect opnieuw draait en wanneer het component verdwijnt. Handig om bijvoorbeeld een <code>setInterval</code> weer te stoppen met <code>clearInterval</code>.</li>
+    <li><strong>Voorbeelden van side effects:</strong> <code>document.title</code> aanpassen, tekenen op een <code>&lt;canvas&gt;</code>, een timer (<code>setInterval</code>) of een externe library aansturen.</li>
+    <li><strong>Let op:</strong> gebruik <code>$effect</code> niet om een waarde uit te rekenen uit andere state. Daarvoor is <code>$derived</code>. De Svelte-docs raden aan om <code>$effect</code> spaarzaam te gebruiken.</li>
+  </ul>
+  <pre><code>{effectVoorbeeld}</code></pre>
+  <p>Het tabblad van de browser hoort niet bij de template van je component. Daarom is dit een side effect.</p>
+  <p>Bron: <a href="https://svelte.dev/docs/svelte/$effect">$effect</a></p>
+
+  <h3>Hydration</h3>
+  <ul>
+    <li>Tijdens hydration gebruikt SvelteKit de <strong>DOM API</strong> en de <strong>Events API</strong> om de bestaande HTML van de server interactief en reactief te maken.</li>
+    <li>Na hydration regelen de <strong>History API</strong> en de <strong>Fetch API</strong> de navigatie, en dat gebeurt allemaal client side.</li>
+    <li>Wanneer Svelte een project laadt, worden de JS packages ingeladen.</li>
+  </ul>
+
+  <h3>CSR aan of uit</h3>
+  <pre>export const csr = true;</pre>
+  <ul>
+    <li>Met deze regel zeg je: doe dit client side.</li>
+    <li>Je kunt hem ook op <code>false</code> zetten, dan gebeurt alles server side.</li>
+    <li>Dit bepaalt of er wel of niet gehydrateerd wordt.</li>
+  </ul>
+  <p><strong>Aanvulling:</strong> deze regel zet je niet in een willekeurig JS-bestand. Hij hoort in een <code>+page.js</code>, <code>+page.server.js</code>, <code>+layout.js</code> of <code>+layout.server.js</code>. In een layout geldt hij ook voor alle pagina's daaronder.</p>
+  <p>Bron: <a href="https://svelte.dev/docs/kit/page-options#csr">page options: csr</a></p>
+
+  </section>
