@@ -1,4 +1,28 @@
+<h2>Tools</h2>
+<p>Handige tools om frameworks en projecten te onderzoeken en te vergelijken.</p>
+
+<ul>
+    <li>
+        <a href="https://npm.anvaka.com/#/view/2d/~upload">npm dependency visualizer (Anvaka)</a> —
+        toont de afhankelijkheden van een npm-package als een visuele grafiek. Je ziet in één oogopslag
+        hoeveel andere packages een project meesleept, handig om te beoordelen hoe "zwaar" een framework is.
+    </li>
+    <li>
+        <a href="https://stack-match.as93.net/">StackMatch</a> —
+        vergelijkt frontend JavaScript-frameworks (18+, waaronder React, Vue, Svelte). Je geeft per
+        eigenschap aan wat je belangrijk vindt (snelheid, bundle-grootte, leercurve enzovoort) en de tool
+        rangschikt de frameworks die het beste bij jouw project passen.
+    </li>
+    <li>
+        <a href="https://www.speedlify.dev/">Speedlify</a> —
+        meet en vergelijkt de prestaties van websites over tijd met Lighthouse-, toegankelijkheids- en
+        real-world data. Veel van de gemeten sites zijn met 11ty gebouwd, dus goed om te zien hoe snel
+        statische sites in de praktijk scoren.
+    </li>
+</ul>
+
 <h1>Verschillende soorten frameworks</h1>
+
 
 <h2>11ty</h2>
 <p>
@@ -24,3 +48,4 @@
     <li><strong>Handmatige asset-verwerking:</strong> Het optimaliseren van afbeeldingen, bundelen van JavaScript of compileren van Sass/Tailwind CSS werkt niet altijd direct "out-of-the-box". Vaak moet je zelf plugins installeren of build-scripts configureren.</li>
     <li><strong>Minder geschikt voor complexe SPA's:</strong> Voor websites die aanvoelen als een app met veel interactieve onderdelen op één pagina zijn frameworks zoals Next.js, Astro of SvelteKit vaak praktischer.</li>
 </ul>
+
