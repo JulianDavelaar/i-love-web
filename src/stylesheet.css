@@ -49,29 +49,27 @@ nav {
 }
 
 a {
-	text-decoration: none;
 	color: rgb(0, 122, 230);
 	font-weight: 700;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
 
 	&:hover {
 		transform: translate(0, -5px);
-		transition-duration: 0.3s;
-		animation-timing-function: ease-in-out;
 	}
 }
 
-@font-face {
-	font-family: 'pixel-font';
-	src: url(../PixelFont-Regular.otf);
+nav a {
+	text-decoration: none;
 }
 
 button {
 	appearance: none;
 	font-size: 1em;
 	font-family: inherit;
-	border-radius: 3px;
+	border-radius: 5px;
 	border: none;
-	background-color: orange;
+	background-color: gold;
 	color: black;
 	cursor: pointer;
 }
@@ -93,15 +91,9 @@ pre code {
 	font-size: inherit;
 }
 
-focus-visible {
+:focus-visible {
 	outline: solid 0.15em white;
 	outline-offset: -0.3em;
-}
-
-button {
-	background-color: gold;
-	border-radius: 5px;
-	color: white;
 }
 
 /* dark mode, of light mode in dit geval */
@@ -120,21 +112,49 @@ button {
 		background-color: #f2f2f2;
 		border-color: black;
 	}
+
+	a {
+		color: #0056b3;
+	}
+
+	:focus-visible {
+		outline-color: black;
+	}
 }
 
 /* prefers-reduced-motion */
 
 @media (prefers-reduced-motion: reduce) {
 	a {
-		text-decoration: none;
-		color: rgb(0, 122, 230);
-		font-weight: 700;
-
 		&:hover {
 			transform: translate(0, 0px);
-			transition-duration: 0.3s;
-			animation-timing-function: ease-in-out;
 		}
+	}
+}
+
+/* print */
+
+@media print {
+	body {
+		border: none;
+		background-color: white;
+		color: black;
+		width: auto;
+	}
+
+	nav,
+	button {
+		display: none;
+	}
+
+	a {
+		color: black;
+		text-decoration: underline;
+	}
+
+	pre {
+		background-color: white;
+		border-color: black;
 	}
 }
 
